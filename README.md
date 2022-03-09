@@ -1,6 +1,6 @@
 # PokemonApp
 
-##Architecture
+## Architecture
 
 * I was using MVVM pattern
 
