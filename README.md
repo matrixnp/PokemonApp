@@ -28,7 +28,7 @@ https://pokeapi.co/
 ### Pagination
 * Pagination is used for better user experience and resource management. It has broken down a list of content into equal smaller pieces, loaded one at a time.
 
-##Gaps:
+## Gaps:
 * Lack of complete data on main JSON object for each Pokemon
 * Withdraw the complete list of data from JSON although the user may not be able to access the details of the pokemon
 
