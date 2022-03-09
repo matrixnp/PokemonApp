@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:app="http://schemas.android.com/apk/res-auto"
+		xmlns:tools="http://schemas.android.com/tools"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+	<TextView
+			tools:text = ""
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/type"
+			app:layout_constraintTop_toBottomOf="@+id/name"
+			app:layout_constraintBottom_toTopOf="@+id/attack"
+			app:layout_constraintEnd_toEndOf="parent"
+			android:layout_marginEnd="30dp"
+			android:textSize="24sp" />
+
+	<TextView
+			tools:text = ""
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/types"
+			app:layout_constraintTop_toBottomOf="@+id/hp"
+			app:layout_constraintBottom_toTopOf="@+id/defense"
+			app:layout_constraintEnd_toEndOf="parent"
+			android:layout_marginEnd="30dp"
+			android:textSize="24sp" />
+
+	<ImageView
+			android:layout_width="200dp"
+			android:layout_height="200dp"
+			android:padding="15dp"
+			tools:srcCompat="@tools:sample/backgrounds/scenic"
+			android:id="@+id/image"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toTopOf="parent"
+			android:layout_marginTop="20dp"
+			app:layout_constraintHorizontal_bias="0.498"
+			app:srcCompat="@drawable/ic_launcher_foreground" />
+
+	<TextView
+			tools:text="Name"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/name"
+			android:textSize="48sp"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintHorizontal_bias="0.498"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintTop_toBottomOf="@+id/image"
+			android:layout_marginTop="28dp" />
+
+	<TextView
+			tools:text="HP"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/hp"
+			app:layout_constraintTop_toBottomOf="@+id/name"
+			app:layout_constraintBottom_toTopOf="@+id/attack"
+			app:layout_constraintStart_toStartOf="parent"
+			android:layout_marginStart="30dp"
+			android:textSize="16sp" />
+
+	<TextView
+			tools:text="Attack"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/attack"
+			app:layout_constraintTop_toBottomOf="@+id/hp"
+			app:layout_constraintBottom_toTopOf="@+id/defense"
+			app:layout_constraintStart_toStartOf="parent"
+			android:layout_marginStart="30dp"
+			android:textSize="16sp" />
+
+	<TextView
+			tools:text="Defense"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/defense"
+			app:layout_constraintTop_toBottomOf="@+id/attack"
+			app:layout_constraintBottom_toTopOf="@+id/special_attack"
+			app:layout_constraintStart_toStartOf="parent"
+			android:layout_marginStart="30dp"
+			android:textSize="16sp" />
+
+	<TextView
+			tools:text="Special Attack"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/special_attack"
+			app:layout_constraintTop_toBottomOf="@+id/defense"
+			app:layout_constraintBottom_toTopOf="@+id/special_defense"
+			app:layout_constraintStart_toStartOf="parent"
+			android:layout_marginStart="30dp"
+			android:textSize="16sp" />
+
+	<TextView
+			tools:text="Special Defense"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/special_defense"
+			app:layout_constraintTop_toBottomOf="@+id/special_attack"
+			app:layout_constraintBottom_toTopOf="@+id/speed"
+			app:layout_constraintStart_toStartOf="parent"
+			android:layout_marginStart="30dp"
+			android:textSize="16sp" />
+
+	<TextView
+			tools:text="Speed"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/speed"
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintTop_toBottomOf="@+id/special_defense"
+			app:layout_constraintStart_toStartOf="parent"
+			android:layout_marginStart="30dp"
+			android:textSize="16sp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
