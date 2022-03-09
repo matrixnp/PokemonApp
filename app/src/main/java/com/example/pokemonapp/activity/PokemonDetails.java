@@ -54,7 +54,6 @@ public class PokemonDetails extends AppCompatActivity {
                 pokemon.getStats().get(5).getBase_stat()));
 
         if (pokemon.getPokemoname().equals("charmeleon")) {
-
             textView7.setText(pokemon.getTypes().get(0).getType().getName());
         } else if (pokemon.getPokemoname().equals("charmander")) {
             textView7.setText(pokemon.getTypes().get(0).getType().getName());

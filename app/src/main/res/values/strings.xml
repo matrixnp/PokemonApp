@@ -11,6 +11,8 @@
     <string name="speed">Speed: </string>
     <string name="types">Types: </string>
     <string name="type">Type: </string>
+	<string name="stats">Stats:</string>
+    <string name="types2">Types:</string>
 
 
 </resources>

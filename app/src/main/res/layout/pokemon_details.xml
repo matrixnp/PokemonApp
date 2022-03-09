@@ -12,9 +12,9 @@
 			android:id="@+id/type"
 			android:textSize="16sp"
 			app:layout_constraintTop_toBottomOf="@+id/types"
-			android:layout_marginTop="52dp"
-			app:layout_constraintEnd_toEndOf="parent"
-			android:layout_marginEnd="56dp" />
+			android:layout_marginTop="20dp"
+			android:layout_marginEnd="60dp"
+			app:layout_constraintEnd_toEndOf="parent" />
 
 	<TextView
 			tools:text="Types"
@@ -22,10 +22,10 @@
 			android:layout_height="wrap_content"
 			android:id="@+id/types"
 			android:textSize="16sp"
+			app:layout_constraintTop_toBottomOf="@+id/textView2"
+			android:layout_marginTop="20dp"
 			app:layout_constraintEnd_toEndOf="parent"
-			android:layout_marginEnd="48dp"
-			app:layout_constraintTop_toBottomOf="@+id/name"
-			android:layout_marginTop="28dp" />
+			android:layout_marginEnd="60dp" />
 
 	<ImageView
 			android:layout_width="200dp"
@@ -36,7 +36,7 @@
 			app:layout_constraintEnd_toEndOf="parent"
 			app:layout_constraintStart_toStartOf="parent"
 			app:layout_constraintTop_toTopOf="parent"
-			android:layout_marginTop="20dp"
+			android:layout_marginTop="10dp"
 			app:layout_constraintHorizontal_bias="0.498"
 			app:srcCompat="@drawable/ic_launcher_foreground" />
 
@@ -57,65 +57,85 @@
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
 			android:id="@+id/hp"
-			app:layout_constraintTop_toBottomOf="@+id/name"
-			app:layout_constraintBottom_toTopOf="@+id/attack"
+			android:textSize="16sp"
+			app:layout_constraintTop_toBottomOf="@+id/textView"
 			app:layout_constraintStart_toStartOf="parent"
 			android:layout_marginStart="40dp"
-			android:textSize="16sp" />
+			android:layout_marginTop="20dp" />
 
 	<TextView
 			tools:text="Attack"
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
 			android:id="@+id/attack"
+			android:textSize="16sp"
 			app:layout_constraintTop_toBottomOf="@+id/hp"
-			app:layout_constraintBottom_toTopOf="@+id/defense"
+			android:layout_marginTop="20dp"
 			app:layout_constraintStart_toStartOf="parent"
-			android:layout_marginStart="30dp"
-			android:textSize="16sp" />
+			android:layout_marginStart="40dp" />
 
 	<TextView
 			tools:text="Defense"
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
 			android:id="@+id/defense"
+			android:textSize="16sp"
 			app:layout_constraintTop_toBottomOf="@+id/attack"
-			app:layout_constraintBottom_toTopOf="@+id/special_attack"
+			android:layout_marginTop="20dp"
 			app:layout_constraintStart_toStartOf="parent"
-			android:layout_marginStart="30dp"
-			android:textSize="16sp" />
+			android:layout_marginStart="40dp" />
 
 	<TextView
 			tools:text="Special Attack"
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
 			android:id="@+id/special_attack"
+			android:textSize="16sp"
 			app:layout_constraintTop_toBottomOf="@+id/defense"
-			app:layout_constraintBottom_toTopOf="@+id/special_defense"
+			android:layout_marginTop="20dp"
 			app:layout_constraintStart_toStartOf="parent"
-			android:layout_marginStart="30dp"
-			android:textSize="16sp" />
+			android:layout_marginStart="40dp" />
 
 	<TextView
 			tools:text="Special Defense"
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
 			android:id="@+id/special_defense"
+			android:textSize="16sp"
 			app:layout_constraintTop_toBottomOf="@+id/special_attack"
-			app:layout_constraintBottom_toTopOf="@+id/speed"
+			android:layout_marginTop="20dp"
 			app:layout_constraintStart_toStartOf="parent"
-			android:layout_marginStart="30dp"
-			android:textSize="16sp" />
+			android:layout_marginStart="40dp" />
 
 	<TextView
 			tools:text="Speed"
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
 			android:id="@+id/speed"
-			app:layout_constraintBottom_toBottomOf="parent"
+			android:textSize="16sp"
 			app:layout_constraintTop_toBottomOf="@+id/special_defense"
+			android:layout_marginTop="20dp"
 			app:layout_constraintStart_toStartOf="parent"
-			android:layout_marginStart="30dp"
-			android:textSize="16sp" />
+			android:layout_marginStart="40dp" />
+
+	<TextView
+			android:text="@string/stats"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/textView"
+			app:layout_constraintTop_toBottomOf="@+id/name"
+			android:textSize="24sp"
+			app:layout_constraintStart_toStartOf="parent"
+			android:layout_marginStart="40dp" />
+
+	<TextView
+			android:text="@string/types2"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/textView2"
+			app:layout_constraintTop_toBottomOf="@+id/name"
+			android:textSize="24sp"
+			app:layout_constraintEnd_toEndOf="parent"
+			android:layout_marginEnd="60dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
