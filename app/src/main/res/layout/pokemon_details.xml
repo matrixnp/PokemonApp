@@ -6,26 +6,26 @@
 		android:layout_height="match_parent">
 
 	<TextView
-			tools:text = ""
+			tools:text="Type"
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
 			android:id="@+id/type"
-			app:layout_constraintTop_toBottomOf="@+id/name"
-			app:layout_constraintBottom_toTopOf="@+id/attack"
+			android:textSize="16sp"
+			app:layout_constraintTop_toBottomOf="@+id/types"
+			android:layout_marginTop="52dp"
 			app:layout_constraintEnd_toEndOf="parent"
-			android:layout_marginEnd="30dp"
-			android:textSize="24sp" />
+			android:layout_marginEnd="56dp" />
 
 	<TextView
-			tools:text = ""
+			tools:text="Types"
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
 			android:id="@+id/types"
-			app:layout_constraintTop_toBottomOf="@+id/hp"
-			app:layout_constraintBottom_toTopOf="@+id/defense"
+			android:textSize="16sp"
 			app:layout_constraintEnd_toEndOf="parent"
-			android:layout_marginEnd="30dp"
-			android:textSize="24sp" />
+			android:layout_marginEnd="48dp"
+			app:layout_constraintTop_toBottomOf="@+id/name"
+			android:layout_marginTop="28dp" />
 
 	<ImageView
 			android:layout_width="200dp"
@@ -60,7 +60,7 @@
 			app:layout_constraintTop_toBottomOf="@+id/name"
 			app:layout_constraintBottom_toTopOf="@+id/attack"
 			app:layout_constraintStart_toStartOf="parent"
-			android:layout_marginStart="30dp"
+			android:layout_marginStart="40dp"
 			android:textSize="16sp" />
 
 	<TextView
